@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "com.google.androidenv.perturbationhelper.app-mergeDebugResources-3:/layout/activity_destination.xml",
+        "source": "com.google.androidenv.perturbationhelper.app-main-6:/layout/activity_destination.xml"
+    },
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-mergeDebugResources-3:/layout/activity_destination.xml",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/layout/activity_destination.xml"
+    },
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-mergeDebugResources-3:/layout/item_preset.xml",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/layout/item_preset.xml"
+    },
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-mergeDebugResources-3:/layout/activity_interruption.xml",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/layout/activity_interruption.xml"
+    },
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-mergeDebugResources-3:/layout/item_section_header.xml",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/layout/item_section_header.xml"
+    }
+]

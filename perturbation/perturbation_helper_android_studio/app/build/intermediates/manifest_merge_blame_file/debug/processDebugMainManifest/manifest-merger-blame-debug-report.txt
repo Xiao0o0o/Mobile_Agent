@@ -1,0 +1,162 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.google.androidenv.perturbationhelper"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <permission
+11-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/9c95af8a3d8e23b4851e56a1d877f495/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+12        android:name="com.google.androidenv.perturbationhelper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/9c95af8a3d8e23b4851e56a1d877f495/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/9c95af8a3d8e23b4851e56a1d877f495/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.google.androidenv.perturbationhelper.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/9c95af8a3d8e23b4851e56a1d877f495/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/9c95af8a3d8e23b4851e56a1d877f495/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:4:3-40:17
+18        android:allowBackup="true"
+18-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:5:7-33
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.13.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/9c95af8a3d8e23b4851e56a1d877f495/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:label="@string/app_name"
+22-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:6:7-39
+23        android:supportsRtl="true"
+23-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:7:7-33
+24        android:theme="@style/Theme.PerturbationHelper" >
+24-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:8:7-54
+25        <activity
+25-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:10:5-22:16
+26            android:name="com.google.androidenv.perturbationhelper.InterruptionActivity"
+26-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:11:9-45
+27            android:excludeFromRecents="true"
+27-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:12:9-42
+28            android:exported="true"
+28-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:13:9-32
+29            android:finishOnTaskLaunch="false"
+29-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:14:9-43
+30            android:launchMode="singleTask"
+30-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:15:9-40
+31            android:taskAffinity=""
+31-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:16:9-32
+32            android:theme="@style/Theme.PerturbationHelper.Interruption" >
+32-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:17:9-69
+33            <intent-filter>
+33-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:18:7-21:23
+34                <action android:name="com.google.androidenv.perturbationhelper.SHOW_INTERRUPTION" />
+34-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:19:9-93
+34-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:19:17-90
+35
+36                <category android:name="android.intent.category.DEFAULT" />
+36-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:20:9-68
+36-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:20:19-65
+37            </intent-filter>
+38        </activity>
+39        <activity
+39-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:24:5-29:59
+40            android:name="com.google.androidenv.perturbationhelper.DestinationActivity"
+40-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:25:9-44
+41            android:excludeFromRecents="true"
+41-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:26:9-42
+42            android:exported="false"
+42-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:27:9-33
+43            android:launchMode="singleTask"
+43-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:28:9-40
+44            android:theme="@style/Theme.PerturbationHelper" />
+44-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:29:9-56
+45        <activity
+45-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:31:5-39:16
+46            android:name="com.google.androidenv.perturbationhelper.MainActivity"
+46-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:32:9-37
+47            android:exported="true"
+47-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:33:9-32
+48            android:theme="@style/Theme.PerturbationHelper" >
+48-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:34:9-56
+49            <intent-filter>
+49-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:35:7-38:23
+50                <action android:name="android.intent.action.MAIN" />
+50-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:36:9-61
+50-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:36:17-58
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:37:9-69
+52-->/home/local/ASURITE/xiaoouli/MobileAgent-main/Mobile-Agent-v3/android_world_v3/perturbation_helper_android_studio/app/src/main/AndroidManifest.xml:37:19-66
+53            </intent-filter>
+54        </activity>
+55
+56        <provider
+56-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ebd423f1d880bd449ad65cf82e576d03/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+57            android:name="androidx.startup.InitializationProvider"
+57-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ebd423f1d880bd449ad65cf82e576d03/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+58            android:authorities="com.google.androidenv.perturbationhelper.androidx-startup"
+58-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ebd423f1d880bd449ad65cf82e576d03/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+59            android:exported="false" >
+59-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ebd423f1d880bd449ad65cf82e576d03/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+60            <meta-data
+60-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ebd423f1d880bd449ad65cf82e576d03/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+61                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+61-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ebd423f1d880bd449ad65cf82e576d03/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+62                android:value="androidx.startup" />
+62-->[androidx.emoji2:emoji2:1.3.0] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ebd423f1d880bd449ad65cf82e576d03/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+63            <meta-data
+63-->[androidx.lifecycle:lifecycle-process:2.8.3] /tmp/gradle-home/caches/9.0-milestone-1/transforms/90dffa5c5707b9ac9902ff1fcad451ce/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+64-->[androidx.lifecycle:lifecycle-process:2.8.3] /tmp/gradle-home/caches/9.0-milestone-1/transforms/90dffa5c5707b9ac9902ff1fcad451ce/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:30:17-78
+65                android:value="androidx.startup" />
+65-->[androidx.lifecycle:lifecycle-process:2.8.3] /tmp/gradle-home/caches/9.0-milestone-1/transforms/90dffa5c5707b9ac9902ff1fcad451ce/transformed/lifecycle-process-2.8.3/AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+68                android:value="androidx.startup" />
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+69        </provider>
+70
+71        <receiver
+71-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+72            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+72-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+73            android:directBootAware="false"
+73-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+74            android:enabled="true"
+74-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+75            android:exported="true"
+75-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+76            android:permission="android.permission.DUMP" >
+76-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+77            <intent-filter>
+77-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+78                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+78-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+79            </intent-filter>
+80            <intent-filter>
+80-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+81                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+81-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+82            </intent-filter>
+83            <intent-filter>
+83-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+84                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+84-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+85            </intent-filter>
+86            <intent-filter>
+86-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+87                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+87-->[androidx.profileinstaller:profileinstaller:1.3.1] /tmp/gradle-home/caches/9.0-milestone-1/transforms/ca41c0be720d42967e8a8d14edc0d9b2/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+88            </intent-filter>
+89        </receiver>
+90    </application>
+91
+92</manifest>

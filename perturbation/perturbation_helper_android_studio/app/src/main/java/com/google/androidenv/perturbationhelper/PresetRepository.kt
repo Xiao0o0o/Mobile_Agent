@@ -1,0 +1,208 @@
+package com.google.androidenv.perturbationhelper
+
+object PresetRepository {
+
+  val presets: List<InterruptionPreset> = listOf(
+    InterruptionPreset(
+      id = "popup_permission",
+      type = InterruptionType.POPUP,
+      name = "Permission Request",
+      summary = "Blocking system-style prompt for notifications or access requests.",
+      spec = defaultSpecFor(InterruptionType.POPUP).copy(
+        surfaceStyle = InterruptionSurfaceStyle.DIALOG,
+        appName = "Android System",
+        title = "Allow notifications?",
+        message = "Android System wants to send alerts while you use this app.",
+        primaryButton = "Allow",
+        secondaryButton = "Not now",
+        blocking = true,
+      ),
+    ),
+    InterruptionPreset(
+      id = "popup_security",
+      type = InterruptionType.POPUP,
+      name = "Security Prompt",
+      summary = "Blocking confirmation dialog that forces an explicit choice.",
+      spec = defaultSpecFor(InterruptionType.POPUP).copy(
+        surfaceStyle = InterruptionSurfaceStyle.DIALOG,
+        appName = "Security Center",
+        title = "Verify this action",
+        message = "This app is trying to change a protected system setting.",
+        primaryButton = "Continue",
+        secondaryButton = "Cancel",
+        blocking = true,
+      ),
+    ),
+    InterruptionPreset(
+      id = "ad_trial_offer",
+      type = InterruptionType.AD,
+      name = "Premium Trial Ad",
+      summary = "Interstitial promotional card with install-style affordances.",
+      spec = defaultSpecFor(InterruptionType.AD).copy(
+        surfaceStyle = InterruptionSurfaceStyle.INTERSTITIAL,
+        appName = "ShopEasy",
+        title = "Try Premium for 30 days",
+        message = "Unlock ad-free browsing, offline access, and exclusive themes.",
+        primaryButton = "Install",
+        secondaryButton = "Close",
+        blocking = true,
+      ),
+    ),
+    InterruptionPreset(
+      id = "ad_flash_sale",
+      type = InterruptionType.AD,
+      name = "Flash Sale Interstitial",
+      summary = "Urgent ad with strong CTA and high visual salience.",
+      spec = defaultSpecFor(InterruptionType.AD).copy(
+        surfaceStyle = InterruptionSurfaceStyle.INTERSTITIAL,
+        appName = "Market Hub",
+        title = "48-hour flash sale",
+        message = "Save 60% on travel gear if you check out before midnight.",
+        primaryButton = "Shop now",
+        secondaryButton = "Maybe later",
+        blocking = true,
+      ),
+    ),
+    InterruptionPreset(
+      id = "update_system",
+      type = InterruptionType.UPDATE,
+      name = "System Updater",
+      summary = "Update prompt that resembles a platform maintenance notice.",
+      spec = defaultSpecFor(InterruptionType.UPDATE).copy(
+        surfaceStyle = InterruptionSurfaceStyle.DIALOG,
+        appName = "System updater",
+        title = "Update available",
+        message = "A newer version is ready with security fixes and improved stability.",
+        primaryButton = "Update now",
+        secondaryButton = "Later",
+        blocking = true,
+      ),
+    ),
+    InterruptionPreset(
+      id = "update_app",
+      type = InterruptionType.UPDATE,
+      name = "App Version Prompt",
+      summary = "Optional in-app update card with non-urgent language.",
+      spec = defaultSpecFor(InterruptionType.UPDATE).copy(
+        surfaceStyle = InterruptionSurfaceStyle.BOTTOM_SHEET,
+        appName = "Maps Go",
+        title = "New features are ready",
+        message = "Get route previews, bug fixes, and improved battery performance.",
+        primaryButton = "Update",
+        secondaryButton = "Skip",
+        blocking = false,
+      ),
+    ),
+    InterruptionPreset(
+      id = "popup_rate_dialog",
+      type = InterruptionType.POPUP,
+      name = "Rate This App",
+      summary = "Common post-task rating modal that interrupts the current flow.",
+      spec = defaultSpecFor(InterruptionType.POPUP).copy(
+        surfaceStyle = InterruptionSurfaceStyle.BOTTOM_SHEET,
+        appName = "Notes Pro",
+        title = "Enjoying Notes Pro?",
+        message = "Would you like to rate the app and tell us what is working well?",
+        primaryButton = "Rate now",
+        secondaryButton = "No thanks",
+        blocking = true,
+      ),
+    ),
+    InterruptionPreset(
+      id = "popup_consent_sheet",
+      type = InterruptionType.POPUP,
+      name = "Privacy Consent Sheet",
+      summary = "Bottom-sheet consent notice for analytics, ads, or personalized content.",
+      spec = defaultSpecFor(InterruptionType.POPUP).copy(
+        surfaceStyle = InterruptionSurfaceStyle.BOTTOM_SHEET,
+        appName = "News Daily",
+        title = "Privacy choices",
+        message = "Choose whether this app can use analytics and personalized content while you browse.",
+        primaryButton = "Accept",
+        secondaryButton = "Manage options",
+        blocking = true,
+      ),
+    ),
+    InterruptionPreset(
+      id = "notification_message",
+      type = InterruptionType.NOTIFICATION,
+      name = "Incoming Message",
+      summary = "Heads-up notification that can be opened, dismissed, or swiped away.",
+      spec = defaultSpecFor(InterruptionType.NOTIFICATION).copy(
+        surfaceStyle = InterruptionSurfaceStyle.BANNER,
+        appName = "Messages",
+        title = "New message",
+        message = "Jordan: The meeting moved to 3:30 PM.",
+        primaryButton = "Open",
+        secondaryButton = "Dismiss",
+        blocking = false,
+        autoDismissMs = 0,
+      ),
+    ),
+    InterruptionPreset(
+      id = "notification_delivery",
+      type = InterruptionType.NOTIFICATION,
+      name = "Delivery Alert",
+      summary = "Time-sensitive banner with automatic timeout behavior.",
+      spec = defaultSpecFor(InterruptionType.NOTIFICATION).copy(
+        surfaceStyle = InterruptionSurfaceStyle.BANNER,
+        appName = "Parcel Tracker",
+        title = "Driver is nearby",
+        message = "Your package will arrive in the next 5 minutes.",
+        primaryButton = "Track",
+        secondaryButton = "Dismiss",
+        blocking = false,
+        autoDismissMs = 4000,
+      ),
+    ),
+  )
+
+  fun defaultSpecFor(type: InterruptionType): InterruptionSpec {
+    return when (type) {
+      InterruptionType.POPUP -> InterruptionSpec(
+        type = type,
+        surfaceStyle = InterruptionSurfaceStyle.DIALOG,
+        appName = "Android System",
+        title = "Allow notifications?",
+        message = "Android System wants to send alerts while you use this app.",
+        primaryButton = "Allow",
+        secondaryButton = "Not now",
+        blocking = true,
+        autoDismissMs = 0,
+      )
+      InterruptionType.AD -> InterruptionSpec(
+        type = type,
+        surfaceStyle = InterruptionSurfaceStyle.INTERSTITIAL,
+        appName = "ShopEasy",
+        title = "Try Premium for 30 days",
+        message = "Unlock ad-free browsing, offline access, and exclusive themes.",
+        primaryButton = "Install",
+        secondaryButton = "Close",
+        blocking = true,
+        autoDismissMs = 0,
+      )
+      InterruptionType.UPDATE -> InterruptionSpec(
+        type = type,
+        surfaceStyle = InterruptionSurfaceStyle.DIALOG,
+        appName = "System updater",
+        title = "Update available",
+        message = "A newer version is ready with security fixes and improved stability.",
+        primaryButton = "Update now",
+        secondaryButton = "Later",
+        blocking = true,
+        autoDismissMs = 0,
+      )
+      InterruptionType.NOTIFICATION -> InterruptionSpec(
+        type = type,
+        surfaceStyle = InterruptionSurfaceStyle.BANNER,
+        appName = "Messages",
+        title = "New message",
+        message = "Jordan: The meeting moved to 3:30 PM.",
+        primaryButton = "Open",
+        secondaryButton = "Dismiss",
+        blocking = false,
+        autoDismissMs = 0,
+      )
+    }
+  }
+}

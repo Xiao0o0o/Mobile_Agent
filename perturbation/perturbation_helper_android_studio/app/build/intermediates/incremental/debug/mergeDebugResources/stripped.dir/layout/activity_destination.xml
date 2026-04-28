@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#0F172A"
+      android:gravity="center_vertical"
+      android:orientation="horizontal"
+      android:paddingStart="16dp"
+      android:paddingTop="18dp"
+      android:paddingEnd="16dp"
+      android:paddingBottom="18dp">
+
+    <TextView
+        android:id="@+id/destinationBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/destinationAppName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@android:color/white"
+          android:textSize="22sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/destinationPath"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="4dp"
+          android:textColor="#CBD5E1"
+          android:textSize="13sp" />
+    </LinearLayout>
+  </LinearLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+      <TextView
+          android:id="@+id/destinationStepLabel"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="#DBEAFE"
+          android:paddingStart="10dp"
+          android:paddingTop="6dp"
+          android:paddingEnd="10dp"
+          android:paddingBottom="6dp"
+          android:textColor="#1D4ED8"
+          android:textSize="12sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/destinationTitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="18dp"
+          android:textColor="#0F172A"
+          android:textSize="28sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/destinationSubtitle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="8dp"
+          android:textColor="#475569"
+          android:textSize="16sp" />
+
+      <TextView
+          android:id="@+id/destinationStatus"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:background="#FEF3C7"
+          android:padding="14dp"
+          android:textColor="#92400E"
+          android:textSize="14sp"
+          android:visibility="gone" />
+
+      <com.google.android.material.card.MaterialCardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="22dp"
+          app:cardBackgroundColor="@android:color/white"
+          app:cardCornerRadius="24dp"
+          app:strokeColor="#E2E8F0"
+          app:strokeWidth="1dp">
+
+        <TextView
+            android:id="@+id/destinationBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="6dp"
+            android:padding="20dp"
+            android:textColor="#0F172A"
+            android:textSize="16sp" />
+      </com.google.android.material.card.MaterialCardView>
+
+      <com.google.android.material.card.MaterialCardView
+          android:id="@+id/destinationFormCard"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="18dp"
+          app:cardBackgroundColor="@android:color/white"
+          app:cardCornerRadius="24dp"
+          app:strokeColor="#E2E8F0"
+          app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+          <TextView
+              android:id="@+id/destinationPanelTitle"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#0F172A"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:visibility="gone" />
+
+          <TextView
+              android:id="@+id/destinationPanelSubtitle"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="6dp"
+              android:textColor="#64748B"
+              android:textSize="14sp"
+              android:visibility="gone" />
+
+          <LinearLayout
+              android:id="@+id/destinationSwitchPanel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/destinationSwitchOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0F172A" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/destinationSwitchTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#0F172A" />
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/destinationSwitchThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#0F172A" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/destinationCheckboxPanel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/destinationCheckboxOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0F172A" />
+
+            <CheckBox
+                android:id="@+id/destinationCheckboxTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#0F172A" />
+
+            <CheckBox
+                android:id="@+id/destinationCheckboxThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#0F172A" />
+
+            <CheckBox
+                android:id="@+id/destinationCheckboxFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="#0F172A" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/destinationRatingPanel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+            <RatingBar
+                android:id="@+id/destinationRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:scaleX="1.15"
+                android:scaleY="1.15"
+                android:stepSize="1" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/destinationRadioPanel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+            <RadioGroup
+                android:id="@+id/destinationRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+              <RadioButton
+                  android:id="@+id/destinationRadioOne"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="#0F172A" />
+
+              <RadioButton
+                  android:id="@+id/destinationRadioTwo"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:textColor="#0F172A" />
+
+              <RadioButton
+                  android:id="@+id/destinationRadioThree"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:textColor="#0F172A" />
+            </RadioGroup>
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/destinationQuickActionPanel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+            <Button
+                android:id="@+id/destinationQuickActionOne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E2E8F0"
+                android:textColor="#334155" />
+
+            <Button
+                android:id="@+id/destinationQuickActionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#E2E8F0"
+                android:textColor="#334155" />
+
+            <Button
+                android:id="@+id/destinationQuickActionThree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#E2E8F0"
+                android:textColor="#334155" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/destinationInputPanel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+            <EditText
+                android:id="@+id/destinationInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F8FAFC"
+                android:gravity="top|start"
+                android:hint="Write here"
+                android:inputType="textMultiLine"
+                android:minHeight="110dp"
+                android:padding="14dp"
+                android:textColor="#0F172A"
+                android:textColorHint="#94A3B8" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/destinationMapPanel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+            <TextView
+                android:id="@+id/destinationMapCanvas"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="#D6EFFF"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="#0F172A"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/destinationMapMeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#EFF6FF"
+                android:padding="14dp"
+                android:textColor="#1E3A8A"
+                android:textSize="14sp" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/destinationProgressPanel"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp"
+              android:orientation="vertical"
+              android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/destinationProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/destinationProgressCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#0F172A"
+                android:textSize="14sp" />
+          </LinearLayout>
+
+          <TextView
+              android:id="@+id/destinationSummaryFooter"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="14dp"
+              android:background="#F8FAFC"
+              android:padding="14dp"
+              android:textColor="#475569"
+              android:textSize="14sp"
+              android:visibility="gone" />
+        </LinearLayout>
+      </com.google.android.material.card.MaterialCardView>
+
+      <Button
+          android:id="@+id/destinationPrimaryButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:backgroundTint="#2563EB"
+          android:textColor="@android:color/white" />
+
+      <Button
+          android:id="@+id/destinationSecondaryButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:backgroundTint="#E2E8F0"
+          android:textColor="#334155" />
+    </LinearLayout>
+  </ScrollView>
+
+</LinearLayout>

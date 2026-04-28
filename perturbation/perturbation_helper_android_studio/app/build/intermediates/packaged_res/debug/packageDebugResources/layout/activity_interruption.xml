@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+  <View
+      android:id="@+id/scrim"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#90000000" />
+
+  <com.google.android.material.card.MaterialCardView
+      android:id="@+id/notificationBannerCard"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp"
+      android:layout_marginEnd="16dp"
+      android:visibility="gone"
+      app:cardBackgroundColor="@color/surface_primary"
+      app:cardCornerRadius="24dp">
+
+    <LinearLayout
+        android:id="@+id/notificationBannerRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+      <View
+          android:id="@+id/bannerAccent"
+          android:layout_width="6dp"
+          android:layout_height="match_parent"
+          android:background="@color/notification_accent" />
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="14dp"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bannerAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bannerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bannerMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+          <com.google.android.material.button.MaterialButton
+              android:id="@+id/bannerPrimaryButton"
+              style="@style/Widget.PerturbationHelper.PrimaryButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/button_open" />
+
+          <com.google.android.material.button.MaterialButton
+              android:id="@+id/bannerSecondaryButton"
+              style="@style/Widget.PerturbationHelper.SecondaryButton"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="10dp"
+              android:text="@string/button_dismiss" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+  </com.google.android.material.card.MaterialCardView>
+
+  <com.google.android.material.card.MaterialCardView
+      android:id="@+id/dialogCardRoot"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_margin="24dp"
+      android:visibility="gone"
+      app:cardBackgroundColor="@color/surface_primary"
+      app:cardCornerRadius="32dp">
+
+    <LinearLayout
+        android:id="@+id/dialogContentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+      <View
+          android:id="@+id/dialogAccent"
+          android:layout_width="64dp"
+          android:layout_height="8dp"
+          android:background="@color/popup_accent" />
+
+      <TextView
+          android:id="@+id/dialogBadge"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="18dp"
+          android:background="@drawable/shape_badge"
+          android:paddingLeft="10dp"
+          android:paddingTop="4dp"
+          android:paddingRight="10dp"
+          android:paddingBottom="4dp"
+          android:text="@string/badge_system"
+          android:textColor="@color/text_primary"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/dialogAppName"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="18dp"
+          android:textColor="@color/text_secondary"
+          android:textSize="15sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/dialogTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:textColor="@color/text_primary"
+          android:textSize="28sp"
+          android:textStyle="bold" />
+
+      <TextView
+          android:id="@+id/dialogMessage"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="12dp"
+          android:textColor="@color/text_secondary"
+          android:textSize="18sp" />
+
+      <View
+          android:id="@+id/dialogSpacer"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="0" />
+
+      <LinearLayout
+          android:id="@+id/dialogButtonRow"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:gravity="end"
+          android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialogSecondaryButton"
+            style="@style/Widget.PerturbationHelper.SecondaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_later" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dialogPrimaryButton"
+            style="@style/Widget.PerturbationHelper.PrimaryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:text="@string/button_allow" />
+      </LinearLayout>
+    </LinearLayout>
+  </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

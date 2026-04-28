@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ad_accent">#FF0F766E</color>
+    <color name="background_subtle">#FFF3F6F8</color>
+    <color name="badge_fill">#FFE2E8F0</color>
+    <color name="notification_accent">#FF0284C7</color>
+    <color name="popup_accent">#FF1D4ED8</color>
+    <color name="surface_container">#FFF6FAFC</color>
+    <color name="surface_primary">#FFFDFEFE</color>
+    <color name="text_primary">#FF0F172A</color>
+    <color name="text_secondary">#FF475569</color>
+    <color name="update_accent">#FF2563EB</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Perturbation Helper</string>
+    <string name="badge_system">System</string>
+    <string name="button_allow">Allow</string>
+    <string name="button_dismiss">Dismiss</string>
+    <string name="button_later">Later</string>
+    <string name="button_open">Open</string>
+    <string name="dashboard_subtitle">A standalone Android Studio app for real, interactive popup, bottom-sheet, interstitial, and notification interruptions.</string>
+    <string name="dashboard_title">Perturbation Helper</string>
+    <string name="editor_subtitle">Customize the copy, surface style, buttons, blocking mode, and timeout before launching an interruption.</string>
+    <string name="editor_title">Interruption Composer</string>
+    <string name="field_app_name">App name</string>
+    <string name="field_auto_dismiss_ms">Auto-dismiss (ms)</string>
+    <string name="field_blocking">Blocking interaction</string>
+    <string name="field_kind">Type</string>
+    <string name="field_message">Message</string>
+    <string name="field_primary_button">Primary button</string>
+    <string name="field_secondary_button">Secondary button</string>
+    <string name="field_surface_style">Surface style</string>
+    <string name="field_title">Title</string>
+    <string name="last_result_empty">No interaction result has been received yet.</string>
+    <string name="last_result_title">Last Result</string>
+    <string name="launch_configured">Launch configured interruption</string>
+    <string name="launch_now">Launch now</string>
+    <string name="load_defaults">Load defaults</string>
+    <string name="load_into_editor">Load into editor</string>
+    <string name="preset_gallery_title">Preset Gallery</string>
+    <style name="Theme.PerturbationHelper" parent="Theme.Material3.Light.NoActionBar">
+    <item name="colorPrimary">@color/popup_accent</item>
+    <item name="colorSurface">@color/surface_primary</item>
+    <item name="android:statusBarColor">@color/background_subtle</item>
+    <item name="android:navigationBarColor">@color/background_subtle</item>
+  </style>
+    <style name="Theme.PerturbationHelper.Interruption" parent="Theme.Material3.Light.NoActionBar">
+    <item name="android:windowIsTranslucent">true</item>
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowNoTitle">true</item>
+    <item name="android:backgroundDimEnabled">false</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+    <item name="android:navigationBarColor">@android:color/transparent</item>
+  </style>
+    <style name="Widget.PerturbationHelper.PrimaryButton" parent="Widget.Material3.Button">
+    <item name="android:textColor">@color/white</item>
+    <item name="android:insetTop">0dp</item>
+    <item name="android:insetBottom">0dp</item>
+  </style>
+    <style name="Widget.PerturbationHelper.SecondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+    <item name="android:insetTop">0dp</item>
+    <item name="android:insetBottom">0dp</item>
+  </style>
+</resources>

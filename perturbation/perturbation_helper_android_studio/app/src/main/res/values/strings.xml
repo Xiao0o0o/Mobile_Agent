@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Perturbation Helper</string>
+  <string name="dashboard_title">Perturbation Helper</string>
+  <string name="dashboard_subtitle">A standalone Android Studio app for real, interactive popup, bottom-sheet, interstitial, and notification interruptions.</string>
+  <string name="preset_gallery_title">Preset Gallery</string>
+  <string name="editor_title">Interruption Composer</string>
+  <string name="editor_subtitle">Customize the copy, surface style, buttons, blocking mode, and timeout before launching an interruption.</string>
+  <string name="field_kind">Type</string>
+  <string name="field_surface_style">Surface style</string>
+  <string name="field_app_name">App name</string>
+  <string name="field_title">Title</string>
+  <string name="field_message">Message</string>
+  <string name="field_primary_button">Primary button</string>
+  <string name="field_secondary_button">Secondary button</string>
+  <string name="field_blocking">Blocking interaction</string>
+  <string name="field_auto_dismiss_ms">Auto-dismiss (ms)</string>
+  <string name="load_defaults">Load defaults</string>
+  <string name="launch_configured">Launch configured interruption</string>
+  <string name="load_into_editor">Load into editor</string>
+  <string name="launch_now">Launch now</string>
+  <string name="last_result_title">Last Result</string>
+  <string name="last_result_empty">No interaction result has been received yet.</string>
+  <string name="button_open">Open</string>
+  <string name="button_dismiss">Dismiss</string>
+  <string name="button_later">Later</string>
+  <string name="button_allow">Allow</string>
+  <string name="badge_system">System</string>
+</resources>

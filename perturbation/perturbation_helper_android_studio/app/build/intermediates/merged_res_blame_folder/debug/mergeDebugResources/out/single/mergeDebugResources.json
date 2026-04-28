@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-debug-4:/layout_item_preset.xml.flat",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/layout/item_preset.xml"
+    },
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.google.androidenv.perturbationhelper.app-debug-4:/layout_activity_destination.xml.flat",
+        "source": "com.google.androidenv.perturbationhelper.app-main-6:/layout/activity_destination.xml"
+    },
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-debug-4:/layout_activity_interruption.xml.flat",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/layout/activity_interruption.xml"
+    },
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-debug-4:/layout_activity_destination.xml.flat",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/layout/activity_destination.xml"
+    },
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-debug-4:/layout_item_section_header.xml.flat",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/layout/item_section_header.xml"
+    },
+    {
+        "merged": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-debug-4:/drawable_shape_badge.xml.flat",
+        "source": "/tmp/gradle-home/daemon/9.0-milestone-1/com.google.androidenv.perturbationhelper.app-main-6:/drawable/shape_badge.xml"
+    }
+]
